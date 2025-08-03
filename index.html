@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelloHackers - Cybersecurity Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>HelloHackers</h1>
+    <body>
+  <button id="toggle-mode">🌗 Toggle Mode</button>
+  <!-- rest of page -->
+</body>
+    <p>Your gateway to mastering cybersecurity</p>
+
+
+  </header>
+
+  <nav>
+    <a href="#learn">Learn</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#tools">Tools</a>
+    <a href="#news">Cyber News</a>
+    <a href="#careers">Careers</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#events">Events</a>
+    <a href="#tips">Daily Tips</a>
+    <a href="#faq">FAQs</a>
+    <a href="#community">Community</a>
+    <a href="#resources">Resources</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+
+  <section id="learn">
+    <h2>Learn Content</h2>
+    <p>Welcome to HelloHackers Learn Zone! We cover everything from basic to advanced topics:</p>
+    <ul>
+      <li>Web Application Security (XSS, SQLi, CSRF, etc.)</li>
+      <li>Network Security Fundamentals</li>
+      <li>Ethical Hacking</li>
+      <li>Tools like Burp Suite, Nmap, Metasploit</li>
+      <li>Hands-on lab exercises with challenges</li>
+    </ul>
+  </section>
+
+  <section id="quiz">
+    <h2>Cybersecurity Quiz Game</h2>
+    <div class="quiz-container">
+      <div id="quiz-intro">
+        <p>Test your knowledge with our fun cybersecurity quiz. Each question has one correct answer. Click below to start!</p>
+        <button id="start-quiz">Start Quiz</button>
+      </div>
+      <div id="quiz-game" style="display:none;">
+        <div id="quiz-question"></div>
+        <div class="options" id="quiz-options"></div>
+        <button class="next-btn" id="next-btn" disabled>Next</button>
+        <div id="quiz-feedback"></div>
+        <div class="progress">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div id="quiz-summary" style="display:none;"></div>
+        <button id="restart-quiz" style="display:none;">Restart Quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>Cyber Tools</h2>
+    <ul>
+      <li><strong>Nmap:</strong> Network scanner</li>
+      <li><strong>Burp Suite:</strong> Web vulnerability scanner</li>
+      <li><strong>Wireshark:</strong> Packet analyzer</li>
+    </ul>
+  </section>
+
+  <section id="news">
+    <h2>Cyber News</h2>
+    <ul>
+      <li>[Aug 3] Major vulnerability found in OpenSSH - CVE-2025-12345</li>
+      <li>[Aug 1] India launches new cybersecurity framework for SMEs</li>
+      <li>[Jul 30] Google patches critical Chrome flaw</li>
+    </ul>
+  </section>
+
+  <section id="careers">
+    <h2>Cybersecurity Careers</h2>
+    <p>Explore roles like:</p>
+    <ul>
+      <li>Penetration Tester</li>
+      <li>Security Analyst</li>
+      <li>Red Teamer / Blue Teamer</li>
+      <li>Bug Bounty Hunter</li>
+    </ul>
+  </section>
+
+  <section id="roadmap">
+    <h2>Roadmap for Cybersecurity</h2>
+    <ol>
+      <li>Learn Networking Fundamentals</li>
+      <li>Understand OS Concepts (Linux/Windows)</li>
+      <li>Study Web Tech & Vulnerabilities</li>
+      <li>Practice Labs (TryHackMe, HelloHackers)</li>
+      <li>Certifications (CEH, OSCP, etc.)</li>
+    </ol>
+  </section>
+
+  <section id="events">
+    <h2>Events</h2>
+    <ul>
+      <li>Capture The Flag (CTF) competitions every weekend</li>
+      <li>Monthly webinar on latest cyber threats</li>
+      <li>Bootcamp: Become a Web Security Expert</li>
+    </ul>
+  </section>
+
+  <section id="tips">
+    <h2>Daily Cyber Tips</h2>
+    <ul>
+      <li>Use 2FA on all important accounts</li>
+      <li>Don’t click unknown email links</li>
+      <li>Keep software and firmware updated</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>FAQs</h2>
+    <ul>
+      <li><strong>What is HelloHackers?</strong> — A learning platform for cybersecurity students.</li>
+      <li><strong>Is it beginner friendly?</strong> — Yes, we start from the basics.</li>
+      <li><strong>Are labs free?</strong> — Basic labs are free. Advanced are paid.</li>
+    </ul>
+  </section>
+
+  <section id="community">
+    <h2>Community</h2>
+    <p>Join our Discord for discussions, resources, and team events. Connect with fellow ethical hackers.</p>
+  </section>
+
+  <section id="resources">
+    <h2>Learning Resources</h2>
+    <ul>
+      <li><a href="https://owasp.org" target="_blank">OWASP</a></li>
+      <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a></li>
+      <li><a href="https://hackthebox.com" target="_blank">HackTheBox</a></li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form id="feedback-form" action="https://formspree.io/f/xdkdllql" method="POST">
+  <label for="name">Your Name:</label>
+  <input type="text" name="name" id="name" required>
+
+  <label for="email">Your Email:</label>
+  <input type="email" name="email" id="email" required>
+
+  <label for="message">Your Message:</label>
+  <textarea name="message" id="message" required></textarea>
+
+  <button type="submit">Submit Feedback</button>
+</form>
+    <p>We value your feedback to improve our platform.</p>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HelloHackers. Learn. Hack. Secure.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
